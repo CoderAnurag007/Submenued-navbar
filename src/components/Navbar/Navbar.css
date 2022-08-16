@@ -1,0 +1,75 @@
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  height: 50px;
+  align-items: center;
+  background-color: rgb(246, 237, 255);
+}
+.logo {
+  font-weight: bold;
+}
+
+.navbar-container ul {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 1rem;
+  position: relative;
+}
+.active {
+  color: blueviolet;
+}
+.navbar-container ul li {
+  list-style: none;
+  border-bottom: 1px solid black;
+}
+.navbar-container ul .hoverme:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.hoverme .submenu-1 {
+  height: 8rem;
+  position: absolute;
+  width: 8rem;
+  display: none;
+  color: black;
+  /* border: 1px solid black; */
+}
+.hoverme:hover .submenu-1 {
+  display: block;
+  background-color: rgb(234, 233, 255);
+}
+.hoverme .submenu-1 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.hoverme .submenu-1 ul li {
+  list-style: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.hoverme .submenu-1 ul li:hover {
+  color: blueviolet;
+}
+
+.hoverme2 .submenu-2 {
+  position: absolute;
+  height: 8rem;
+  top: 2rem;
+  right: 8rem;
+  width: 8rem;
+  color: black;
+  display: none;
+  background-color: aquamarine;
+}
+
+.hoverme2:hover .submenu-2 {
+  display: block;
+}
